@@ -26,6 +26,7 @@ function Tarefas() {
         value={novaTarefa}
         placeholder='Digite uma nova tarefa...'
         placeholderTextColor="#999"
+        multiline
       />
       <TouchableOpacity style={styles.butao} onPress={adicionarTarefa}>
         <Text style={styles.butaotext}>Adicionar Tarefa</Text>
@@ -64,36 +65,51 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
+
   title: {
-    color: "#fff",
+    color: "#000",
+    fontWeight: "bold",
     fontSize: 30,
     marginBottom: 20,
+    margin: 30
   },
+
   input: {
     padding: 5,
-    color: "#fff",
+    color: "#000  ",
     borderWidth: 1,
     borderColor: "#fff",
     width: "80%",
     marginBottom: 10,
+    borderRadius: 10,
+    paddingHorizontal: 12,
+    paddingVertical: "3%"
   },
+
   butao: {
-    backgroundColor: "#2196f3",
+    backgroundColor: "#615fe6",
     width: "80%",
     padding: 8,
     alignItems: "center",
+    borderRadius: 12
   },
+
   butaotext: {
     color: "#fff"
   },
+
   texto: {
-    color: "#fff",
+    color: "#000",
     marginTop: 5,
   },
+
   texto1: { 
-    color: "#fff",
-    padding: 1,
+    color: "#000",
+    padding: 5,
+    height: "auto",
+    maxWidth: "80%"
   },
+
   tarefasContainer: {
     alignItems: 'center',
     flex: 1,
@@ -101,37 +117,42 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "column",
     letterSpacing: 1.5,
-    backgroundColor: "#3d7cc1",
+    backgroundColor: "#f1f1f3",
     paddingBottom: "5%",
     paddingTop: "5%",
     borderRadius: 15,
   },
+
   tarefas: {
-    backgroundColor: "#2196f3",
+    backgroundColor: "#fcfcfe",
     height: "auto",
     width: "100%",
-    borderRadius: 5,
-    padding: "1.5%",
+    borderRadius: 15,
+    padding: "3%",
     paddingHorizontal: "5%",
-    color: "#fff",
     marginTop: 8,
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between',
+    justifyContent: 'space-between'
   },
+
   minhastarefas: {
     width: "80%"
   },
+
   remover: {
     backgroundColor: "red",
     paddingHorizontal: 12,
     paddingVertical: 5,
-    borderRadius: 4,
+    borderRadius: 16,
   },
+
   textoDaTarefa: {
-    color: "#fff",
-    flex: 1,
+    color: "#000",
+    fontWeight: "bold",
+    maxWidth: "85%"
   },
+
   textoBotaoRemover: {
     color: "#fff",
     fontWeight: 'bold',
